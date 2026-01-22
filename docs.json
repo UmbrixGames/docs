@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "venus",
+  "theme": "willow",
   "name": "Tenebris Wiki",
   "colors": {
     "primary": "#8B5CF6",
