@@ -1,0 +1,150 @@
+---
+title: "Guilds & Factions"
+description: "Build your faction, recruit allies, and compete for dominance"
+---
+
+Guilds (also known as Factions) are player organizations that provide social features, shared resources, and competitive gameplay.
+
+## Guild Overview
+
+Joining or creating a guild provides:
+
+- **Shared resources** and guild bank
+- **Guild-exclusive quests** and rewards
+- **Territory control** and wars
+- **Social features** and communication
+- **Exclusive perks** as your guild levels up
+
+## Guild Commands
+
+| Command | Description |
+|---------|-------------|
+| `/guild create <name>` | Create a new guild |
+| `/guild invite <player>` | Invite a player |
+| `/guild join <name>` | Request to join a guild |
+| `/guild leave` | Leave your current guild |
+| `/guild info` | View guild information |
+| `/guild chat` | Toggle guild chat |
+| `/guild list` | Browse all guilds |
+
+## Creating a Guild
+
+<Steps>
+  <Step title="Meet Requirements">
+    - Reach level 15
+    - Have 1000 gold
+    - Not currently in a guild
+  </Step>
+  <Step title="Create the Guild">
+    Use `/guild create <name>` to create your guild
+  </Step>
+  <Step title="Set Up">
+    Configure roles, permissions, and description
+  </Step>
+  <Step title="Recruit">
+    Invite players to join your new faction
+  </Step>
+</Steps>
+
+## Guild Ranks
+
+| Rank | Permissions |
+|------|-------------|
+| **Leader** | Full control, can disband guild |
+| **Officer** | Invite, kick, manage bank |
+| **Veteran** | Access guild bank, participate in wars |
+| **Member** | Basic guild features |
+| **Recruit** | Limited access, trial period |
+
+<Note>
+  Guild leaders can create custom ranks with specific permissions!
+</Note>
+
+## Guild Bank
+
+The guild bank provides shared storage for all members:
+
+```bash
+/guild bank         # Open guild bank
+/guild bank deposit # Deposit items
+/guild bank log     # View transaction history
+```
+
+### Bank Permissions
+
+- **Deposit:** All members
+- **Withdraw:** Veterans and above (configurable)
+- **View logs:** Officers and above
+
+## Guild Leveling
+
+Your guild earns XP through member activities:
+
+| Activity | Guild XP |
+|----------|----------|
+| Member dungeon completion | +10-50 XP |
+| Member quest completion | +5-25 XP |
+| Guild quest completion | +100-500 XP |
+| War victory | +1000 XP |
+
+### Guild Level Benefits
+
+| Level | Perk |
+|-------|------|
+| 1 | Base guild features |
+| 5 | +5 member slots |
+| 10 | Guild bank expansion |
+| 15 | Territory claims |
+| 20 | Guild wars |
+| 25 | Exclusive cosmetics |
+
+## Guild Wars
+
+<Warning>
+  Guild wars are PvP events! Make sure all participants are prepared.
+</Warning>
+
+Compete against other guilds in organized battles:
+
+### War Types
+
+| Type | Description |
+|------|-------------|
+| **Skirmish** | Small 5v5 battles |
+| **Siege** | Attack/defend territory |
+| **Total War** | Full guild vs guild |
+
+### Declaring War
+
+```bash
+/guild war declare <guild>  # Challenge another guild
+/guild war accept           # Accept war declaration
+/guild war status           # View ongoing wars
+```
+
+## Territory Control
+
+High-level guilds can claim territories on the map:
+
+- **Resource bonuses** for territory holders
+- **Must defend** against challenger guilds
+- **Weekly upkeep** costs
+
+## Guild Quests
+
+Special quests only available to guild members:
+
+- Require coordination between multiple members
+- Provide guild XP and exclusive rewards
+- Weekly rotating objectives
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Party System" icon="users" href="/social/party-system">
+    Team up with guildmates
+  </Card>
+  <Card title="Dungeons" icon="dungeon" href="/features/dungeons">
+    Clear dungeons together
+  </Card>
+</CardGroup>

@@ -1,68 +1,61 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "venus",
+  "name": "Tenebris Wiki",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#8B5CF6",
+    "light": "#A78BFA",
+    "dark": "#7C3AED"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Wiki",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Welcome",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Gameplay Features",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "features/skyblock",
+              "features/rpg-systems",
+              "features/classes",
+              "features/dungeons",
+              "features/forging",
+              "features/quests"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Social Systems",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "social/guilds",
+              "social/party-system",
+              "social/trading",
+              "social/friends"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Server Info",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Server",
             "pages": [
-              "api-reference/introduction"
+              "server/rules",
+              "server/community"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Updates",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "updates/changelog"
             ]
           }
         ]
@@ -71,14 +64,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Discord",
+          "href": "https://discord.gg/umbrixgames",
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Play Now",
+          "href": "https://tenebris.umbrixgames.eu",
+          "icon": "gamepad"
         }
       ]
     }
@@ -90,33 +83,22 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Discord",
+        "href": "https://discord.gg/umbrixgames"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Play Now",
+      "href": "https://tenebris.umbrixgames.eu"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.gg/umbrixgames"
     }
+  },
+  "modeToggle": {
+    "default": "dark"
   }
 }

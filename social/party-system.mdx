@@ -1,0 +1,155 @@
+---
+title: "Party System"
+description: "Team up with friends for dungeons and adventures"
+---
+
+The Party System allows you to group with other players for cooperative gameplay, especially for tackling dungeons and difficult content.
+
+## Party Overview
+
+Parties provide:
+
+- **Shared dungeon instances** for cooperative play
+- **Loot distribution** options
+- **Voice/text communication** integration
+- **Buff sharing** from party skills
+
+## Party Commands
+
+| Command | Description |
+|---------|-------------|
+| `/party create` | Create a new party |
+| `/party invite <player>` | Invite a player |
+| `/party accept` | Accept party invitation |
+| `/party deny` | Decline invitation |
+| `/party leave` | Leave current party |
+| `/party kick <player>` | Remove a player (leader only) |
+| `/party list` | View party members |
+| `/party chat` | Toggle party chat |
+| `/party disband` | Disband the party (leader only) |
+
+## Creating a Party
+
+<Steps>
+  <Step title="Create Party">
+    Use `/party create` to become the party leader
+  </Step>
+  <Step title="Invite Members">
+    Use `/party invite <playername>` for each player
+  </Step>
+  <Step title="Configure Settings">
+    Set loot rules and other options
+  </Step>
+  <Step title="Start Your Adventure">
+    Enter a dungeon or explore together!
+  </Step>
+</Steps>
+
+## Party Size
+
+| Content Type | Max Party Size |
+|--------------|----------------|
+| Open World | 5 players |
+| Normal Dungeons | 4 players |
+| Elite Dungeons | 5 players |
+| Raids | 10 players |
+
+## Party Roles
+
+For efficient dungeon runs, assign roles:
+
+<CardGroup cols={3}>
+  <Card title="Tank" icon="shield">
+    Warrior with defensive skills
+  </Card>
+  <Card title="Healer" icon="heart">
+    Mage with healing abilities
+  </Card>
+  <Card title="DPS" icon="sword">
+    Archer, Warrior, or damage Mage
+  </Card>
+</CardGroup>
+
+### Role Assignment
+
+```bash
+/party role <player> <tank|healer|dps>
+```
+
+<Tip>
+  Roles help with automatic targeting and buff priorities!
+</Tip>
+
+## Loot Distribution
+
+The party leader can set loot rules:
+
+| Mode | Description |
+|------|-------------|
+| **Free for All** | First to pick up gets the item |
+| **Round Robin** | Items distributed in rotation |
+| **Need/Greed** | Vote on who gets rare items |
+| **Leader Decides** | Leader assigns all loot |
+
+### Setting Loot Mode
+
+```bash
+/party loot <mode>
+```
+
+## Party Finder
+
+Looking for a group? Use the party finder:
+
+```bash
+/partyfinder browse    # Browse active listings
+/partyfinder create    # List your party
+/partyfinder join <id> # Request to join a listing
+```
+
+### Party Finder Listings
+
+When creating a listing, specify:
+- **Content:** Which dungeon or activity
+- **Roles needed:** Tank, healer, DPS
+- **Level range:** Minimum level required
+- **Description:** Any special requirements
+
+## Party Buffs
+
+Party members can share certain buffs:
+
+| Source | Effect | Range |
+|--------|--------|-------|
+| **Warrior War Cry** | +10% attack speed | 20 blocks |
+| **Mage Blessing** | +5% all stats | 15 blocks |
+| **Archer Focus** | +10% crit chance | 15 blocks |
+
+## Communication
+
+### Party Chat
+
+Use `/p` or `/party chat` to talk with your party:
+
+```bash
+/p Hey team, ready for the boss?
+```
+
+### Voice Chat
+
+For difficult content, we recommend joining our Discord:
+
+<Card title="Voice Channels" icon="discord" href="https://discord.gg/umbrixgames">
+  Use our LFG voice channels for party coordination
+</Card>
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Dungeons" icon="dungeon" href="/features/dungeons">
+    Challenge dungeons together
+  </Card>
+  <Card title="Classes" icon="sword" href="/features/classes">
+    Build a balanced party composition
+  </Card>
+</CardGroup>

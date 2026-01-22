@@ -1,0 +1,166 @@
+---
+title: "Forging System"
+description: "Craft and upgrade custom equipment with unique textures"
+---
+
+The Forging System is Tenebris' crafting system, allowing you to create powerful custom equipment with unique models and textures.
+
+## Overview
+
+Forging is more than simple crafting—it's a progression system where you:
+
+1. **Gather materials** from dungeons, islands, and quests
+2. **Craft base equipment** at the Forge
+3. **Upgrade items** to increase their power
+4. **Apply enchantments** for unique effects
+
+## Accessing the Forge
+
+Visit the Forge in the main hub or use the command:
+
+```bash
+/forge          # Open the forging menu
+/forge recipes  # View available recipes
+```
+
+## Forging Materials
+
+### Common Materials
+
+| Material | Source | Used For |
+|----------|--------|----------|
+| Iron Essence | Mining, Mobs | Basic weapons/armor |
+| Leather Scraps | Mobs | Light armor |
+| Arcane Dust | Dungeons | Magic items |
+
+### Rare Materials
+
+| Material | Source | Used For |
+|----------|--------|----------|
+| Void Crystal | Elite mobs | Advanced weapons |
+| Dragon Scale | Boss drops | Heavy armor |
+| Soul Fragment | Dungeons | Enchantments |
+
+### Legendary Materials
+
+<Warning>
+  Legendary materials are extremely rare and only drop from the hardest content!
+</Warning>
+
+| Material | Source | Used For |
+|----------|--------|----------|
+| Primordial Essence | Elite dungeons | Legendary gear |
+| Celestial Ore | Special events | Ultimate items |
+
+## Crafting Equipment
+
+### Weapon Tiers
+
+<Steps>
+  <Step title="Common (Gray)">
+    Basic stats, no special effects
+  </Step>
+  <Step title="Uncommon (Green)">
+    Slightly improved stats
+  </Step>
+  <Step title="Rare (Blue)">
+    Good stats, 1 enchant slot
+  </Step>
+  <Step title="Epic (Purple)">
+    Excellent stats, 2 enchant slots, custom texture
+  </Step>
+  <Step title="Legendary (Orange)">
+    Maximum stats, 3 enchant slots, unique model and effects
+  </Step>
+</Steps>
+
+### Armor Tiers
+
+Armor follows the same tier system, with each class having unique sets:
+
+<Tabs>
+  <Tab title="Warrior">
+    - **Plate Armor:** Maximum defense
+    - **Battle Armor:** Balanced stats
+  </Tab>
+  <Tab title="Mage">
+    - **Robes:** Maximum mana and spell power
+    - **Enchanted Cloth:** Balanced with defense
+  </Tab>
+  <Tab title="Archer">
+    - **Leather Armor:** Maximum mobility
+    - **Reinforced Leather:** Balanced defense
+  </Tab>
+</Tabs>
+
+## Upgrading Items
+
+Upgrade existing equipment to increase its power without losing enchantments.
+
+### Upgrade Process
+
+```bash
+/forge upgrade  # Open upgrade menu
+```
+
+1. Select the item to upgrade
+2. Add required upgrade materials
+3. Confirm the upgrade
+
+### Success Rates
+
+| Current Tier | Success Rate | Materials Needed |
+|--------------|--------------|------------------|
+| Common → Uncommon | 100% | 10 Essence |
+| Uncommon → Rare | 80% | 25 Essence + 5 Crystals |
+| Rare → Epic | 50% | 50 Essence + 15 Crystals |
+| Epic → Legendary | 25% | 100 Essence + 1 Primordial |
+
+<Note>
+  Failed upgrades don't destroy the item, but you lose the materials. Use Protection Scrolls to increase success rates!
+</Note>
+
+## Custom Textures
+
+Epic and Legendary equipment features **custom textures** that display unique models:
+
+- **Epic items:** Custom 2D textures
+- **Legendary items:** Full 3D custom models with particle effects
+
+<Tip>
+  Requires a compatible resource pack. The pack downloads automatically when you join the server!
+</Tip>
+
+## Salvaging
+
+Don't need an item? Salvage it for materials:
+
+```bash
+/forge salvage  # Salvage items for materials
+```
+
+| Item Tier | Materials Returned |
+|-----------|-------------------|
+| Common | 2-3 Essence |
+| Uncommon | 5-8 Essence |
+| Rare | 10-15 Essence + 2 Crystals |
+| Epic | 25-35 Essence + 8 Crystals |
+
+## Forging Skill
+
+Your Forging skill improves with use:
+
+- **Higher skill = better success rates**
+- **Unlock new recipes as you level**
+- **Reduced material costs at high levels**
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Custom Enchants" icon="sparkles" href="/features/rpg-systems#custom-enchantments">
+    Apply unique enchantments to your gear
+  </Card>
+  <Card title="Dungeons" icon="dungeon" href="/features/dungeons">
+    Farm materials from dungeon runs
+  </Card>
+</CardGroup>

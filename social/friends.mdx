@@ -1,0 +1,149 @@
+---
+title: "Friends System"
+description: "Add friends, see when they're online, and teleport to them"
+---
+
+The Friends System helps you stay connected with players you enjoy playing with.
+
+## Friends Overview
+
+Adding friends provides:
+
+- **Online notifications** when friends join
+- **Easy teleportation** to friend locations
+- **Private messaging** shortcuts
+- **Friend-only features** like island access
+
+## Friend Commands
+
+| Command | Description |
+|---------|-------------|
+| `/friend add <player>` | Send friend request |
+| `/friend accept` | Accept pending request |
+| `/friend deny` | Decline friend request |
+| `/friend remove <player>` | Remove a friend |
+| `/friend list` | View all friends |
+| `/friend online` | View online friends |
+| `/friend requests` | View pending requests |
+
+## Adding Friends
+
+<Steps>
+  <Step title="Send Request">
+    Use `/friend add <playername>`
+  </Step>
+  <Step title="Wait for Acceptance">
+    The other player must accept your request
+  </Step>
+  <Step title="Enjoy Benefits">
+    You're now friends! See them online and teleport to them
+  </Step>
+</Steps>
+
+<Note>
+  Friend requests expire after 7 days if not accepted.
+</Note>
+
+## Friend Status
+
+View your friends' online status:
+
+```bash
+/friend list
+```
+
+Output shows:
+- 🟢 **Online** - Currently playing
+- 🟡 **Away** - AFK or busy
+- 🔴 **Offline** - Not currently online
+- ⏱️ **Last seen** - Time since last login (for offline friends)
+
+## Friend Teleportation
+
+Quickly travel to your friends:
+
+```bash
+/friend tp <playername>
+```
+
+<Warning>
+  The friend must have friend teleportation enabled in their settings.
+</Warning>
+
+### Teleport Settings
+
+Control who can teleport to you:
+
+| Setting | Command |
+|---------|---------|
+| Allow all friends | `/friend tpsettings all` |
+| Best friends only | `/friend tpsettings best` |
+| Nobody | `/friend tpsettings none` |
+
+## Best Friends
+
+Mark your closest friends for special features:
+
+```bash
+/friend best <player>     # Add as best friend
+/friend unbest <player>   # Remove best friend status
+```
+
+### Best Friend Benefits
+
+| Feature | Regular Friend | Best Friend |
+|---------|----------------|-------------|
+| Online notifications | ✅ | ✅ (priority) |
+| Teleportation | With permission | Always |
+| Island access | With permission | Automatic |
+| Private messages | ✅ | ✅ |
+
+## Private Messaging
+
+Send private messages to friends:
+
+```bash
+/msg <player> <message>
+/r <message>               # Reply to last message
+```
+
+### Message Settings
+
+| Command | Description |
+|---------|-------------|
+| `/msg toggle` | Enable/disable messages |
+| `/msg friends` | Only receive from friends |
+| `/msg all` | Receive from everyone |
+
+## Friend Limits
+
+| Account Type | Max Friends |
+|--------------|-------------|
+| Default | 50 friends |
+| Premium | 100 friends |
+
+## Privacy Settings
+
+Control your friend features:
+
+```bash
+/friend settings
+```
+
+| Setting | Options |
+|---------|---------|
+| **Friend requests** | All / Friends of friends / None |
+| **Online status** | Visible / Friends only / Hidden |
+| **Teleports** | All friends / Best friends / None |
+| **Messages** | All / Friends only / None |
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Party System" icon="users" href="/social/party-system">
+    Play with friends in dungeons
+  </Card>
+  <Card title="Guilds" icon="shield" href="/social/guilds">
+    Create a guild with friends
+  </Card>
+</CardGroup>

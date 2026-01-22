@@ -1,0 +1,173 @@
+---
+title: "Trading System"
+description: "Buy, sell, and trade items with other players"
+---
+
+The Trading System allows players to exchange items, currency, and resources safely and securely.
+
+## Trading Methods
+
+Tenebris offers multiple ways to trade:
+
+<CardGroup cols={3}>
+  <Card title="Direct Trade" icon="handshake">
+    Trade face-to-face with another player
+  </Card>
+  <Card title="Auction House" icon="store">
+    List items for sale to anyone
+  </Card>
+  <Card title="Player Shops" icon="shop">
+    Set up your own shop
+  </Card>
+</CardGroup>
+
+## Direct Trading
+
+Trade directly with another player for instant exchanges.
+
+### Trade Commands
+
+| Command | Description |
+|---------|-------------|
+| `/trade <player>` | Send trade request |
+| `/trade accept` | Accept incoming request |
+| `/trade deny` | Decline trade request |
+
+### How to Trade
+
+<Steps>
+  <Step title="Send Request">
+    Use `/trade <playername>` to request a trade
+  </Step>
+  <Step title="Add Items">
+    Click items in your inventory to add them
+  </Step>
+  <Step title="Add Currency">
+    Specify gold amount if needed
+  </Step>
+  <Step title="Confirm">
+    Both players must click "Confirm" to complete
+  </Step>
+</Steps>
+
+<Warning>
+  Always verify the items before confirming! Trades cannot be reversed.
+</Warning>
+
+## Auction House
+
+The Auction House is the central marketplace for all players.
+
+### Auction Commands
+
+| Command | Description |
+|---------|-------------|
+| `/ah` | Open Auction House |
+| `/ah sell <price>` | List held item for sale |
+| `/ah search <term>` | Search for items |
+| `/ah expired` | View expired listings |
+| `/ah collect` | Collect sold item profits |
+
+### Listing Items
+
+<Steps>
+  <Step title="Hold the Item">
+    Put the item you want to sell in your hand
+  </Step>
+  <Step title="Set Price">
+    Use `/ah sell <price>` to list it
+  </Step>
+  <Step title="Wait">
+    Your item is now visible to all players
+  </Step>
+  <Step title="Collect">
+    Use `/ah collect` to get your gold after it sells
+  </Step>
+</Steps>
+
+### Auction Fees
+
+| Item Tier | Listing Fee | Sold Commission |
+|-----------|-------------|-----------------|
+| Common | 1 gold | 5% |
+| Uncommon | 5 gold | 5% |
+| Rare | 10 gold | 5% |
+| Epic | 25 gold | 7% |
+| Legendary | 50 gold | 10% |
+
+<Tip>
+  Price your items competitively! Check what others are selling for with `/ah search`.
+</Tip>
+
+## Player Shops
+
+Create a permanent shop on your island for passive income.
+
+### Shop Commands
+
+| Command | Description |
+|---------|-------------|
+| `/shop create` | Create a shop sign |
+| `/shop stock` | Add items to your shop |
+| `/shop prices` | View/set prices |
+| `/shop collect` | Collect earnings |
+
+### Setting Up a Shop
+
+1. Place a sign where you want the shop
+2. Use `/shop create` while looking at the sign
+3. Stock items and set prices
+4. Players can buy when you're offline!
+
+## Currency
+
+### Gold
+
+Gold is the primary currency in Tenebris:
+
+- Earned from quests, dungeons, and selling items
+- Used for trading, repairs, and services
+- View balance with `/balance` or `/bal`
+
+### Transferring Gold
+
+Send gold to another player:
+
+```bash
+/pay <player> <amount>
+```
+
+<Note>
+  There is no fee for direct gold transfers between players.
+</Note>
+
+## Trade Safety
+
+Tenebris includes several safety features:
+
+| Feature | Description |
+|---------|-------------|
+| **Trade Lock** | Both must confirm before completion |
+| **Scam Protection** | Can't modify after the other confirms |
+| **Trade Log** | All trades are logged for support |
+| **Item Verification** | Items display full stats in trade window |
+
+### Reporting Scams
+
+If you believe you've been scammed:
+
+1. Do not trade further with the player
+2. Take screenshots of your trade history
+3. Open a ticket on Discord
+4. Staff will investigate and take action
+
+## Related Features
+
+<CardGroup cols={2}>
+  <Card title="Forging" icon="hammer" href="/features/forging">
+    Craft items to sell
+  </Card>
+  <Card title="Dungeons" icon="dungeon" href="/features/dungeons">
+    Farm valuable loot for trading
+  </Card>
+</CardGroup>
