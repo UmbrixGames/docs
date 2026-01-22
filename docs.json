@@ -49,6 +49,7 @@
             "group": "Server",
             "pages": [
               "server/account",
+              "server/shop",
               "server/rules",
               "server/community"
             ]
