@@ -25,7 +25,7 @@
             "pages": [
               "features/skyblock",
               "features/rpg-systems",
-              "features/classes",
+              "features/factions",
               "features/dungeons",
               "features/forging",
               "features/quests"
@@ -99,8 +99,5 @@
     "socials": {
       "discord": "https://discord.gg/umbrixgames"
     }
-  },
-  "modeToggle": {
-    "default": "dark"
   }
 }
