@@ -7,6 +7,19 @@
     "light": "#A78BFA",
     "dark": "#7C3AED"
   },
+  "appearance": {
+    "default": "dark"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Outfit",
+      "weight": 700
+    },
+    "body": {
+      "family": "Inter",
+      "weight": 400
+    }
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
